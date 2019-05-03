@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="Введите что то ">
+        <input type="text" name="tag" placeholder="Tag ">
+        <button type="submit">Добавить</button>
+
+    </form>
+</div>
+<div>Список сообщений:</div>
+{{#messaage}}
+    <div>
+        <b>{{id}}</b>
+        <i>{{text}}</i>
+        <span>{{tag}}
+        </span>
+    </div>
+{{/messaage}}
+</body>
+</html>
